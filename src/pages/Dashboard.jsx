@@ -1,7 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { Header } from '../components/layout/header/Header';
-import { Main } from '../components/layout/main/Main';
+import { Product } from '../components/layout/product/Product';
+import { Contact } from "../components/layout/contact/Contact";
 import { Footer } from '../components/layout/footer/Footer';
 
 const Container = styled.div`
@@ -10,9 +11,10 @@ const Container = styled.div`
 
 export function Dashboard() {
     return (
-        <Container className="p-8">
+        <Container className="p-5">
             <Header />
-            <Main />
+            <Product />
+            <Contact />
             <Footer />
         </Container>
     )

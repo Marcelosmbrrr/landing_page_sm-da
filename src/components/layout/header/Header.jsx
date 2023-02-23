@@ -27,10 +27,30 @@ const Li = styled.li`
     cursor: pointer;
 `;
 
+const Link = styled.a`
+    transition: 1s;
+    &:hover {
+        color: #f97316;
+    }
+`;
+
 export function Header() {
 
+    function handleClickOnLink(event) {
+        event.preventDefault();
+
+        const element = event.target;
+        const href = element.getAttribute("href");
+        const scroll_to = document.querySelector(href).offsetTop;
+
+        window.scroll({
+            top: scroll_to,
+            behavior: "smooth"
+        });
+    }
+
     return (
-        <Container className="container max-w-full h-screen bg-images">
+        <Container className="container max-w-full h-screen bg-images" id="home">
             <HeaderTop className="flex flex-row justify-around items-center h-20 p-1">
                 <div className="cursor-pointer">
                     <img src="images/logo.png" className="inline" width="110px"></img>
@@ -39,13 +59,13 @@ export function Header() {
                     <nav>
                         <ul className="flex flex-row text-white">
                             <Li className="px-5 flex-col">
-                                <Span><HomeIcon /></Span>
+                                <Link href="#home" onClick={handleClickOnLink}>Home</Link>
                             </Li>
                             <Li className="px-5">
-                                <Span>Produto</Span>
+                                <Link href="#product" onClick={handleClickOnLink}>Produto</Link>
                             </Li>
                             <Li className="px-5">
-                                <Span>Contato</Span>
+                                <Link href="#contact" onClick={handleClickOnLink}>Contato</Link>
                             </Li>
                         </ul>
                     </nav>

@@ -6,10 +6,10 @@ const Container = styled.div`
     position: relative;
 `;
 
-export function Main() {
+export function Product() {
     return (
-        <Container className="container max-w-full h-screen bg-clean_canva mt-5">
-            <h1>MAIN</h1>
+        <Container className="container max-w-full h-screen bg-clean_canva mt-5" id="product">
+            <h1>PRODUCT</h1>
         </Container>
     )
 }
