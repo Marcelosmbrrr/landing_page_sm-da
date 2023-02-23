@@ -8,8 +8,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         "images": "url(../public/images/background.png)",
-        "clean_canva": "url(../public/images/background_clean_texture.png)"
-      }
+        "clean_canva": "url(../public/images/background_clean_texture.png)",
+        "image_ex1": "url(../public/images/example1.png)",
+        "image_ex2": "url(../public/images/example2.png)",
+        "image_ex3": "url(../public/images/example3.png)"
+      },
     },
   },
   plugins: [],
