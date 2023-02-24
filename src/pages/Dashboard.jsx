@@ -14,7 +14,7 @@ export function Dashboard() {
         <Container className="p-2">
             <Header />
             <Product />
-            <Footer />
+            <Footer /> 
         </Container>
     )
 }
