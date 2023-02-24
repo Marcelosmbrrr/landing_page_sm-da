@@ -6,15 +6,14 @@ import { Contact } from "../components/layout/contact/Contact";
 import { Footer } from '../components/layout/footer/Footer';
 
 const Container = styled.div`
- transition: 1s;
+    background-color: #fff;
 `;
 
 export function Dashboard() {
     return (
-        <Container className="p-5">
+        <Container className="p-2">
             <Header />
             <Product />
-            <Contact />
             <Footer />
         </Container>
     )

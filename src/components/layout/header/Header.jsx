@@ -1,11 +1,9 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { HomeIcon } from '../../icons/HomeIcon';
 
 const Container = styled.div`
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: relative;
-    //transform: perspective(900px) rotateX(1deg);
 `;
 
 const Span = styled.span`
@@ -63,9 +61,6 @@ export function Header() {
                             </Li>
                             <Li className="px-5">
                                 <Link href="#product" onClick={handleClickOnLink}>Produto</Link>
-                            </Li>
-                            <Li className="px-5">
-                                <Link href="#contact" onClick={handleClickOnLink}>Contato</Link>
                             </Li>
                         </ul>
                     </nav>
