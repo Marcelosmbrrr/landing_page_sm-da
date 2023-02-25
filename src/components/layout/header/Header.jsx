@@ -34,6 +34,30 @@ const Link = styled.a`
 
 export function Header() {
 
+    /*
+    const titleRef = "SM DIGITAL ART";
+    const [title, setTitle] = React.useState("");
+
+    React.useEffect(() => {
+
+        let isMounted = true;
+        const title_arr = titleRef.split("");
+
+        title_arr.forEach((letter, index) => {
+            setTimeout(() => {
+                if (isMounted) {
+                    setTitle((prev) => prev + letter);
+                }
+            }, 75 * index);
+        });
+
+        return () => {
+            isMounted = false;
+        };
+
+    }, []);
+    */
+
     function handleClickOnLink(event) {
         event.preventDefault();
 
