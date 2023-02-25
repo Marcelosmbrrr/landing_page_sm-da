@@ -8,7 +8,7 @@ const Container = styled.footer`
 export function Footer() {
     return (
         <Container className="container max-w-full h-10 flex justify-center items-center mt-5">
-            <div>
+            <div className='text-white'>
                 {`Copyright © SM DIGITAL ART ${new Date().getFullYear()}`}
             </div>
         </Container>
